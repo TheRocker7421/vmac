@@ -13,3 +13,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run the MacOS Environment
       run: source mac.sh
+    - name: Show IP
+      run: curl ifconfig.me
+    - name: MacOS System running...
+      uses: mxschmitt/action-tmate@v2
