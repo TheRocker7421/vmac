@@ -1,0 +1,15 @@
+name: Start MacOS
+on: 
+  workflow_dispatch:
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    name: MacOS Build
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run the MacOS Environment
+      run: source macos.sh
